@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Orchidée Thai Massage · Massage thaïlandais à Brest</title>
+  <meta name="description" content="Orchidée Thai Massage, salon de massage thaïlandais à Brest (29200). Pressions sur mesure, étirements, pochons de plantes, massage des pieds. Ouvert 7j/7, sur rendez-vous : 06 08 42 74 92.">
+  <meta name="theme-color" content="#2A0F33">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Orchidée Thai Massage">
+  <meta property="og:title" content="Orchidée Thai Massage · Massage thaïlandais à Brest">
+  <meta property="og:description" content="Pressions sur mesure, étirements, pochons de plantes. Salon de massage thaïlandais à Brest, ouvert 7j/7 sur rendez-vous.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    /* Les états de départ des animations ne s'appliquent que si le JS tourne ;
+       sécurité : si quoi que ce soit bloque, le préchargeur se retire seul. */
+    document.documentElement.classList.add('js','is-loading');
+    setTimeout(function(){ document.documentElement.classList.add('loader-timeout'); }, 9000);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Orchidée Thai Massage",
+    "description": "Salon de massage thaïlandais à Brest : pressions sur mesure, étirements, pochons de plantes, massage des pieds.",
+    "telephone": "+33608427492",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4 Rpe du Vieux Bourg",
+      "postalCode": "29200",
+      "addressLocality": "Brest",
+      "addressCountry": "FR"
+    },
+    "hasMap": "https://maps.app.goo.gl/DtU1ECkt7ipXzRX59",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "13:00", "closes": "19:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- ============ SPRITE SVG (pétales, orchidée, icônes) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <radialGradient id="gPetal" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="190">
+      <stop offset="0" stop-color="#FFF3F9"/>
+      <stop offset=".26" stop-color="#FFA6D2"/>
+      <stop offset=".62" stop-color="#E4509F"/>
+      <stop offset="1" stop-color="#A3226F"/>
+    </radialGradient>
+    <linearGradient id="gLip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE39A"/>
+      <stop offset="1" stop-color="#E8A927"/>
+    </linearGradient>
+
+    <g id="pt-top"><path d="M0 0C-52-24-66-120 0-176 66-120 52-24 0 0Z" fill="url(#gPetal)"/><path d="M0-14V-150" stroke="#fff" stroke-opacity=".45" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+    <g id="pt-wing"><path d="M0 0C-20-70-130-120-186-62-212-6-118 46 0 0Z" fill="url(#gPetal)"/><path d="M-14-6Q-90-40-168-52" stroke="#fff" stroke-opacity=".45" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+    <g id="pt-low"><path d="M0 0C-44 36-58 108 0 156 58 108 44 36 0 0Z" fill="url(#gPetal)"/><path d="M0 14V128" stroke="#fff" stroke-opacity=".4" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+    <g id="pt-lip"><path d="M0-6C-30-2-40 34-16 58L0 44 16 58C40 34 30-2 0-6Z" fill="url(#gLip)" stroke="#A3226F" stroke-width="2" stroke-linejoin="round"/><circle cx="0" cy="-2" r="13" fill="#FFF3F9"/><circle cx="-4" cy="-4" r="3" fill="#E8A927"/><circle cx="5" cy="1" r="2" fill="#E8A927"/></g>
+
+    <symbol id="orchid" viewBox="-200 -200 400 400">
+      <use href="#pt-low" transform="rotate(30)"/>
+      <use href="#pt-low" transform="rotate(-30)"/>
+      <use href="#pt-top"/>
+      <use href="#pt-wing" transform="rotate(-6)"/>
+      <use href="#pt-wing" transform="scale(-1 1) rotate(-6)"/>
+      <use href="#pt-lip" transform="translate(0 6)"/>
+    </symbol>
+
+    <symbol id="i-petal" viewBox="0 0 24 24"><path d="M12 22C4 15 3 7 12 1c9 6 8 14 0 21Z" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5.5 3h3l1.6 4.3-2 1.4a12 12 0 0 0 6.2 6.2l1.4-2L20 14.5v3a2.5 2.5 0 0 1-2.7 2.5A15.5 15.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-north-east" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.500Z" fill="currentColor"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 64 48"><path d="M0 48V28C0 11 9 2 26 0v10C17 12 14 17 14 24h12v24H0Zm38 0V28C38 11 47 2 64 0v10c-9 2-12 7-12 14h12v24H38Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ PRÉCHARGEUR ============ -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__orchid" viewBox="-200 -200 400 400" role="presentation">
+      <g class="lp lp-lowL"><use href="#pt-low" transform="rotate(30)"/></g>
+      <g class="lp lp-lowR"><use href="#pt-low" transform="rotate(-30)"/></g>
+      <g class="lp lp-top"><use href="#pt-top"/></g>
+      <g class="lp lp-wingL"><use href="#pt-wing" transform="rotate(-6)"/></g>
+      <g class="lp lp-wingR"><use href="#pt-wing" transform="scale(-1 1) rotate(-6)"/></g>
+      <g class="lp lp-lip"><use href="#pt-lip" transform="translate(0 6)"/></g>
+    </svg>
+    <p class="loader__name">Orchidée <em>thai massage</em></p>
+    <p class="loader__count"><span id="loaderNum">0</span><small>%</small></p>
+  </div>
+  <div class="loader__curve"></div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__pill">
+    <a class="nav__logo" href="#top" aria-label="Orchidée Thai Massage — retour en haut">
+      <svg class="nav__mark" aria-hidden="true"><use href="#i-petal"/></svg>
+      <span>Orchidée</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a class="link-u" href="#rituel">Le rituel</a>
+      <a class="link-u" href="#soins">Les soins</a>
+      <a class="link-u" href="#galerie">Le salon</a>
+      <a class="link-u" href="#avis">Avis</a>
+      <a class="link-u" href="#acces">Venir</a>
+    </nav>
+    <a class="nav__cta" href="tel:+33608427492">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg>
+      <span>06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</span>
+    </a>
+    <button class="nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true" inert>
+  <div class="menu__bg"></div>
+  <nav class="menu__inner" aria-label="Menu mobile">
+    <a href="#rituel"><i>01</i>Le rituel</a>
+    <a href="#soins"><i>02</i>Les soins</a>
+    <a href="#galerie"><i>03</i>Le salon</a>
+    <a href="#avis"><i>04</i>Avis</a>
+    <a href="#acces"><i>05</i>Venir</a>
+    <div class="menu__foot">
+      <a class="btn btn--gold" href="tel:+33608427492"><span class="btn__fill"></span><span class="btn__label"><svg aria-hidden="true"><use href="#i-phone"/></svg>Appeler le salon</span></a>
+      <p>4 Rpe du Vieux Bourg<br>29200 Brest</p>
+    </div>
+  </nav>
+</div>
+
+<!-- barre de progression : la « sen », ligne d'énergie -->
+<svg class="sen" id="sen" aria-hidden="true" viewBox="0 0 24 1000" preserveAspectRatio="none">
+  <path class="sen__track" id="senTrack" d=""/>
+  <path class="sen__fill" id="senFill" d=""/>
+  <circle class="sen__bead" id="senBead" r="5" cx="12" cy="0"/>
+</svg>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<a class="fab" id="fab" href="tel:+33608427492" aria-label="Appeler le salon : 06 08 42 74 92">
+  <svg aria-hidden="true"><use href="#i-phone"/></svg><span>Appeler</span>
+</a>
+
+<main id="contenu">
+<!-- ================================================================== -->
+<!-- 1. HERO                                                             -->
+<!-- ================================================================== -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__bg" data-parallax="0.06" aria-hidden="true"></div>
+  <div class="hero__mandala" data-parallax="0.16" aria-hidden="true"><div class="mandala"></div></div>
+
+  <div class="hero__petals" aria-hidden="true">
+    <div class="hp hp--1" data-parallax="-0.10"><div class="hp__m" data-depth="26"><svg class="orchid"><use href="#orchid"/></svg></div></div>
+    <div class="hp hp--2" data-parallax="-0.30"><div class="hp__m" data-depth="48"><svg class="leaf"><use href="#i-petal"/></svg></div></div>
+    <div class="hp hp--3" data-parallax="-0.18"><div class="hp__m" data-depth="34"><svg class="leaf"><use href="#i-petal"/></svg></div></div>
+    <div class="hp hp--4" data-parallax="-0.44"><div class="hp__m" data-depth="64"><svg class="leaf"><use href="#i-petal"/></svg></div></div>
+    <div class="hp hp--5" data-parallax="-0.26"><div class="hp__m" data-depth="40"><svg class="leaf"><use href="#i-petal"/></svg></div></div>
+  </div>
+
+  <figure class="hero__photo" data-parallax="-0.08">
+    <div class="hero__photo-m" data-depth="-18">
+      <div class="frame frame--arch" id="heroFrame">
+        <div class="px"><img class="kb" src="assets/img/soin-pieds.webp" width="606" height="1080" alt="Massage des pieds : une main tient un bâtonnet en bois, à côté d'un pochon de plantes, d'une fleur d'orchidée violette et de serviettes blanches ornées d'un frangipanier." fetchpriority="high" decoding="async"></div>
+      </div>
+      <a class="badge" href="tel:+33608427492" aria-label="Appeler le salon">
+        <svg class="badge__ring" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">MASSAGE THAÏLANDAIS • BREST • OUVERT 7J/7 • </textPath></text>
+        </svg>
+        <svg class="badge__icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      </a>
+    </div>
+  </figure>
+
+  <div class="hero__inner">
+    <p class="eyebrow eyebrow--light" data-hero-in><svg aria-hidden="true"><use href="#i-petal"/></svg>Salon de massage thaïlandais · Brest</p>
+    <h1 class="hero__title" id="hero-title">
+      <span class="sr-only">Orchidée thai massage — salon de massage thaïlandais à Brest</span>
+      <span class="hero__l1 display" data-chars aria-hidden="true">Orchidée</span>
+      <span class="hero__l2 display" data-chars aria-hidden="true">thai massage</span>
+    </h1>
+    <div class="hero__row">
+      <p class="hero__lead" data-hero-in>Le massage thaïlandais qui s'adapte à votre corps : pressions profondes, étirements, gestes doux. Dosé sur mesure, dans un salon chaleureux à Brest.</p>
+      <div class="hero__actions" data-hero-in>
+        <a class="btn btn--gold" href="tel:+33608427492" data-magnetic>
+          <span class="btn__fill"></span>
+          <span class="btn__label"><svg aria-hidden="true"><use href="#i-phone"/></svg>Prendre rendez-vous</span>
+        </a>
+        <a class="link-u link-u--light" href="#rituel">Découvrir le salon <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <p class="status status--hero" data-hero-in><span class="status__dot" data-status-dot></span><span data-status>Horaires du jour</span></p>
+  </div>
+
+  <a class="hero__scroll" href="#rituel" aria-label="Faire défiler vers le rituel"><span></span></a>
+</section>
+
+<!-- ================================================================== -->
+<!-- 2. MARQUEE                                                          -->
+<!-- ================================================================== -->
+<div class="marquees" aria-hidden="true">
+  <div class="mq mq--a">
+    <div class="mq__track" data-mq="1">
+      <ul class="mq__list">
+        <li>Massage thaïlandais</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Lâcher-prise</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Pression sur mesure</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Étirements</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Énergie retrouvée</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+      </ul>
+      <ul class="mq__list" data-clone>
+        <li>Massage thaïlandais</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Lâcher-prise</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Pression sur mesure</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Étirements</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Énergie retrouvée</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mq mq--b">
+    <div class="mq__track" data-mq="-1">
+      <ul class="mq__list">
+        <li>Ouvert 7j/7</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Brest</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Pochons de plantes</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Massage des pieds</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Dimanche dès 13h</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+      </ul>
+      <ul class="mq__list" data-clone>
+        <li>Ouvert 7j/7</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Brest</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Pochons de plantes</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Massage des pieds</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+        <li>Dimanche dès 13h</li><li class="sep-ic"><svg><use href="#i-petal"/></svg></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- 3. LE RITUEL (storytelling pinné)                                   -->
+<!-- ================================================================== -->
+<section class="rituel" id="rituel" aria-labelledby="rituel-title">
+  <div class="container rituel__head">
+    <p class="eyebrow" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Le rituel</p>
+    <h2 class="h2 display" id="rituel-title" data-split="words">Un massage qui s'ajuste à vous, <em>minute après minute.</em></h2>
+  </div>
+
+  <div class="story" id="story">
+    <div class="story__grid">
+      <div class="story__media" aria-hidden="true">
+        <div class="story__frame frame frame--arch">
+          <div class="story__img is-active" data-i="0"><div class="px"><img class="kb" src="assets/img/salon-boiserie.webp" width="672" height="894" alt="" loading="lazy" decoding="async"></div></div>
+          <div class="story__img" data-i="1"><div class="px"><img class="kb" src="assets/img/salon-tentures.webp" width="606" height="888" alt="" loading="lazy" decoding="async"></div></div>
+          <div class="story__img" data-i="2"><div class="px"><img class="kb" src="assets/img/etagere-bouddhas.webp" width="672" height="384" alt="" loading="lazy" decoding="async"></div></div>
+          <div class="story__img" data-i="3"><div class="px"><img class="kb" src="assets/img/table-soie.webp" width="585" height="975" alt="" loading="lazy" decoding="async"></div></div>
+        </div>
+        <svg class="story__orchid" aria-hidden="true"><use href="#orchid"/></svg>
+      </div>
+
+      <div class="story__text">
+        <ol class="story__steps">
+          <li class="step is-active" data-i="0">
+            <figure class="step__fig frame frame--petal"><img src="assets/img/salon-boiserie.webp" width="672" height="894" alt="Le salon : boiserie claire, table de soin dressée de rose et de rouge, panier de fleurs et grande porte-fenêtre." loading="lazy" decoding="async"></figure>
+            <span class="step__num display" aria-hidden="true">01</span>
+            <h3 class="step__title display">Bienvenue</h3>
+            <p>On pousse la porte, on souffle un grand coup. Samaï vous accueille, vous demande où ça tire, où ça serre, ce que vous attendez de ce moment. Le massage commence là, dans l'écoute.</p>
+          </li>
+          <li class="step" data-i="1">
+            <figure class="step__fig frame frame--petal"><img src="assets/img/salon-tentures.webp" width="606" height="888" alt="Le coin soin : tentures thaïes dorées sur fond noir, commode, table de soin recouverte d'un tissu rouge." loading="lazy" decoding="async"></figure>
+            <span class="step__num display" aria-hidden="true">02</span>
+            <h3 class="step__title display">Un voyage immobile</h3>
+            <p>Tentures dorées, soies aux couleurs vives, petites statues, fleurs : le décor vous emmène en Thaïlande sans quitter Brest. Les yeux se ferment tout seuls.</p>
+          </li>
+          <li class="step" data-i="2">
+            <figure class="step__fig frame frame--petal"><img src="assets/img/etagere-bouddhas.webp" width="672" height="384" alt="Étagère du salon : orchidée rose, bâtonnets d'encens, statuettes de Bouddha et de divinités." loading="lazy" decoding="async"></figure>
+            <span class="step__num display" aria-hidden="true">03</span>
+            <h3 class="step__title display">Le détail qui rassure</h3>
+            <p>Un salon impeccable, des mains lavées avant de passer au visage et à la tête, une pression ajustée au moindre froncement de sourcil. Les clients le racontent mieux que nous : lisez leurs avis plus bas.</p>
+          </li>
+          <li class="step" data-i="3">
+            <figure class="step__fig frame frame--petal"><img src="assets/img/table-soie.webp" width="585" height="975" alt="Table de soin habillée d'un tissu vert pomme et d'un chemin de soie violet et orangé, avec un panier de fleurs." loading="lazy" decoding="async"></figure>
+            <span class="step__num display" aria-hidden="true">04</span>
+            <h3 class="step__title display">On repart plus léger</h3>
+            <p>Force et douceur, muscle par muscle, en profondeur. À la fin, les épaules sont redescendues et le souffle s'est allongé. Même l'escalier du retour paraît plus facile.</p>
+          </li>
+        </ol>
+        <div class="story__progress" aria-hidden="true"><span class="story__bar"><i></i></span><span class="story__count"><b id="storyNow">01</b> / 04</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 4. LES SOINS (défilement horizontal)                                -->
+<!-- ================================================================== -->
+<section class="soins" id="soins" aria-labelledby="soins-title">
+  <div class="sep sep--petal sep--plum" aria-hidden="true"></div>
+  <div class="hscroll" id="hscroll">
+    <div class="hscroll__track" id="hsTrack">
+      <div class="hs-intro">
+        <p class="eyebrow eyebrow--light" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Les soins</p>
+        <h2 class="h2 display" id="soins-title" data-split="words">Quatre façons de <em>lâcher prise.</em></h2>
+        <p class="lead lead--light" data-fade>Durées, tarifs et options : on vous les donne au téléphone, et on choisit ensemble le soin qui correspond à votre journée (et à vos épaules).</p>
+        <p class="hs-hint" aria-hidden="true">Faites défiler <svg><use href="#i-arrow"/></svg></p>
+      </div>
+
+      <article class="card card--orchid" data-tilt>
+        <div class="card__in">
+          <div class="card__glare" aria-hidden="true"></div>
+          <span class="card__no display" aria-hidden="true">01</span>
+          <svg class="card__ic" viewBox="0 0 120 120" aria-hidden="true"><path d="M10 38c18-14 30 14 50 0s32 14 50 0" /><path d="M10 62c18-14 30 14 50 0s32 14 50 0" /><path d="M10 86c18-14 30 14 50 0s32 14 50 0" /><circle cx="60" cy="38" r="5" class="dot"/><circle cx="36" cy="62" r="5" class="dot"/><circle cx="84" cy="86" r="5" class="dot"/></svg>
+          <p class="card__tag">Le classique</p>
+          <h3 class="card__title display">Massage thaïlandais</h3>
+          <p>Pressions profondes du pouce et de la paume le long des lignes d'énergie, étirements guidés, articulations mobilisées. Le corps se déplie, la tension s'évapore.</p>
+        </div>
+      </article>
+
+      <article class="card card--gold" data-tilt>
+        <div class="card__in">
+          <div class="card__glare" aria-hidden="true"></div>
+          <span class="card__no display" aria-hidden="true">02</span>
+          <svg class="card__ic" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 12C38 42 30 56 30 72a30 30 0 0 0 60 0c0-16-8-30-30-60Z"/><path d="M44 74a16 16 0 0 0 16 16" /><circle cx="60" cy="108" r="3" class="dot"/></svg>
+          <p class="card__tag">Tout en lenteur</p>
+          <h3 class="card__title display">Massage détente</h3>
+          <p>Le rythme ralentit : gestes longs et enveloppants, pression douce à moyenne. Idéal pour couper net après une grosse semaine.</p>
+        </div>
+      </article>
+
+      <article class="card card--lime" data-tilt>
+        <div class="card__in">
+          <div class="card__glare" aria-hidden="true"></div>
+          <span class="card__no display" aria-hidden="true">03</span>
+          <svg class="card__ic" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="72" r="34"/><path d="M48 40c0-12 6-18 12-26 6 8 12 14 12 26"/><path d="M30 60c20 10 40 10 60 0M28 82c22 12 42 12 64 0"/></svg>
+          <p class="card__tag">La chaleur d'abord</p>
+          <h3 class="card__title display">Pochons de plantes</h3>
+          <p>Des pochons de plantes réchauffés, tamponnés sur le dos et les jambes : la chaleur détend les muscles avant même que les mains n'arrivent.</p>
+        </div>
+      </article>
+
+      <article class="card card--cream" data-tilt>
+        <div class="card__in">
+          <div class="card__glare" aria-hidden="true"></div>
+          <span class="card__no display" aria-hidden="true">04</span>
+          <svg class="card__ic" viewBox="0 0 120 120" aria-hidden="true"><path d="M52 20c-16 0-22 18-20 40 2 22-4 34 4 44 8 10 28 8 32-6 4-14-2-24 0-40 2-18-2-38-16-38Z"/><circle cx="30" cy="20" r="5"/><circle cx="46" cy="10" r="5"/><circle cx="62" cy="8" r="5"/><circle cx="76" cy="14" r="5"/><circle cx="86" cy="26" r="4"/><path d="M52 52v0" class="dot"/></svg>
+          <p class="card__tag">Là où le corps se souvient</p>
+          <h3 class="card__title display">Massage des pieds</h3>
+          <p>Un bâtonnet en bois, des pouces précis : on appuie là où tout se rejoint. Parfait quand on a piétiné toute la journée.</p>
+        </div>
+      </article>
+
+      <aside class="hs-end">
+        <p class="display">Un doute ?<br><em>On vous conseille.</em></p>
+        <a class="btn btn--gold" href="tel:+33608427492" data-magnetic><span class="btn__fill"></span><span class="btn__label"><svg aria-hidden="true"><use href="#i-phone"/></svg>06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</span></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 5. CHIFFRES CLÉS                                                    -->
+<!-- ================================================================== -->
+<section class="stats" id="chiffres" aria-labelledby="stats-title">
+  <div class="container">
+    <h2 class="stats__title display" id="stats-title" data-split="words">En chiffres, <em>sans tricher.</em></h2>
+    <div class="stats__grid">
+      <div class="stat" data-fade>
+        <div class="stat__viz stat__viz--days" aria-hidden="true">
+          <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span class="half">D</span>
+        </div>
+        <p class="stat__num display"><span data-count data-to="7">7</span></p>
+        <p class="stat__label"><strong>jours sur 7.</strong> Le dimanche aussi, dès 13&nbsp;h.</p>
+      </div>
+      <div class="stat" data-fade>
+        <div class="stat__viz stat__viz--ring" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+        </div>
+        <p class="stat__num display"><span data-count data-to="60">60</span><small>h</small></p>
+        <p class="stat__label"><strong>d'ouverture chaque semaine.</strong> De quoi trouver votre créneau.</p>
+      </div>
+      <div class="stat" data-fade>
+        <div class="stat__viz stat__viz--petals" aria-hidden="true">
+          <svg><use href="#i-petal"/></svg><svg><use href="#i-petal"/></svg><svg><use href="#i-petal"/></svg><svg><use href="#i-petal"/></svg><svg><use href="#i-petal"/></svg>
+        </div>
+        <p class="stat__num display"><span data-count data-to="5">5</span></p>
+        <p class="stat__label"><strong>avis de vrais clients,</strong> recopiés mot pour mot plus bas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 6. GALERIE                                                          -->
+<!-- ================================================================== -->
+<section class="galerie" id="galerie" aria-labelledby="galerie-title">
+  <div class="container">
+    <div class="galerie__head">
+      <p class="eyebrow" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Le salon</p>
+      <h2 class="h2 display" id="galerie-title" data-split="words">Un lieu à voir <em>de plus près.</em></h2>
+    </div>
+    <div class="gallery">
+      <figure class="tile g1" data-tilt data-reveal="curtain">
+        <div class="frame frame--arch"><div class="px"><img src="assets/img/soin-pieds.webp" width="606" height="1080" alt="Massage des pieds avec un bâtonnet en bois, pochon de plantes, orchidée violette et serviettes blanches." loading="lazy" decoding="async"></div></div>
+        <figcaption><span>Les pieds d'abord</span></figcaption>
+      </figure>
+      <figure class="tile g2" data-tilt data-reveal="circle">
+        <div class="frame frame--petal"><div class="px"><img src="assets/img/etagere-bouddhas.webp" width="672" height="384" alt="Étagère aux statuettes de Bouddha, bâtonnets d'encens et orchidée rose." loading="lazy" decoding="async"></div></div>
+        <figcaption><span>Bouddhas, encens, orchidée</span></figcaption>
+      </figure>
+      <figure class="tile g3" data-tilt data-reveal="curtain">
+        <div class="frame frame--round"><div class="px"><img src="assets/img/salon-tentures.webp" width="606" height="888" alt="Tentures thaïes dorées au-dessus de la table de soin recouverte de rouge." loading="lazy" decoding="async"></div></div>
+        <figcaption><span>Tentures dorées</span></figcaption>
+      </figure>
+      <figure class="tile g4" data-tilt data-reveal="circle">
+        <div class="frame frame--soft"><div class="px"><img src="assets/img/table-soie.webp" width="585" height="975" alt="Table de soin vert pomme avec un chemin de table en soie violette et un panier de fleurs." loading="lazy" decoding="async"></div></div>
+        <figcaption><span>Soie violette &amp; vert pomme</span></figcaption>
+      </figure>
+      <figure class="tile g5" data-tilt data-reveal="curtain">
+        <div class="frame frame--petal-r"><div class="px"><img src="assets/img/salon-boiserie.webp" width="672" height="894" alt="Salon lumineux avec boiserie, table de soin rose et rouge et panier de fleurs." loading="lazy" decoding="async"></div></div>
+        <figcaption><span>Boiseries et lumière du jour</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 7. AVIS                                                             -->
+<!-- ================================================================== -->
+<section class="avis" id="avis" aria-labelledby="avis-title" aria-roledescription="carrousel">
+  <div class="sep sep--curve" aria-hidden="true"></div>
+  <div class="container avis__head">
+    <div>
+      <p class="eyebrow eyebrow--light" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Ils en parlent</p>
+      <h2 class="h2 display" id="avis-title" data-split="words">Ils en parlent <em>mieux que nous.</em></h2>
+    </div>
+    <p class="lead lead--light" data-fade>Cinq avis de vrais clients, reproduits mot pour mot.</p>
+  </div>
+
+  <div class="rv" id="rv">
+    <div class="rv__viewport" id="rvViewport">
+      <div class="rv__track" id="rvTrack">
+
+        <figure class="rv-card" aria-roledescription="diapositive" aria-label="1 sur 5">
+          <svg class="rv-card__q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>
+            <p>Franchement, un massage incroyable !</p>
+            <p>Elle a été tellement douce, adorable et à l’écoute, tout en sachant parfaitement adapter la pression. J’ai vraiment passé un super moment et je suis ressortie complètement détendue.</p>
+            <p>J’ai aussi beaucoup apprécié son attention à l’hygiène et aux petits détails, notamment le fait qu’elle se lave les mains avant de passer au visage et à la tête. Ça montre vraiment son professionnalisme et son souci du bien-être.</p>
+            <p>Encore merci</p>
+          </blockquote>
+          <figcaption><span class="rv-card__av" aria-hidden="true">L</span><span><strong>Ludovic Le Gall</strong><small>Avis client</small></span></figcaption>
+        </figure>
+
+        <figure class="rv-card" aria-roledescription="diapositive" aria-label="2 sur 5">
+          <svg class="rv-card__q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>
+            <p>Un grand merci pour ce moment de détente et de lâcher prise !</p>
+            <p>Samaï est tout aussi chaleureuse que talentueuse. Elle sait mettre à l'aise et adapter son massage en fonction des besoins et ressentis.</p>
+            <p>On en ressort plus léger.</p>
+            <p>Moi même habituée, je recommande l'expérience sans hésiter !</p>
+          </blockquote>
+          <figcaption><span class="rv-card__av" aria-hidden="true">V</span><span><strong>Valentine Le Stanc</strong><small>Avis client</small></span></figcaption>
+        </figure>
+
+        <figure class="rv-card" aria-roledescription="diapositive" aria-label="3 sur 5">
+          <svg class="rv-card__q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>
+            <p>FOR-MI-ABLE...</p>
+            <p>Un Grand Merci à Samai pour son accueil, sa gentillesse et son professionnalisme. Je recommande grandement ses massages, pratiqué dans très joli salon.</p>
+          </blockquote>
+          <figcaption><span class="rv-card__av" aria-hidden="true">L</span><span><strong>Lila Desbois</strong><small>Avis client</small></span></figcaption>
+        </figure>
+
+        <figure class="rv-card" aria-roledescription="diapositive" aria-label="4 sur 5">
+          <svg class="rv-card__q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>
+            <p>Force, douceur, professionnalisme, efficacité, rigueur, plaisir, relaxation, détente... Il n'y a pas assez de mots pour décrire les incroyables massages de Samaï. Elle prend vraiment le temps de travailler en profondeur chacun de vos muscles dans un environnement chaleureux et pour ne rien gâcher, elle est très gentille. Un pur plaisir. Je recommande les yeux fermés ! Foncez !</p>
+          </blockquote>
+          <figcaption><span class="rv-card__av" aria-hidden="true">C</span><span><strong>Camille Dejoue</strong><small>Avis client</small></span></figcaption>
+        </figure>
+
+        <figure class="rv-card" aria-roledescription="diapositive" aria-label="5 sur 5">
+          <svg class="rv-card__q" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>
+            <p>Salon très propre et un superbe accueil, elle est très professionnelle , calme , douce et a l écoute si vous avez une douleur .</p>
+            <p>Des massages de qualités, qui vous remettent en forme .</p>
+            <p>Je retournerais</p>
+            <p>Je vous recommande ce salon .</p>
+          </blockquote>
+          <figcaption><span class="rv-card__av" aria-hidden="true">H</span><span><strong>Hubert Hascoet</strong><small>Avis client</small></span></figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+    <div class="container rv__ctrl">
+      <div class="rv__dots" id="rvDots" role="group" aria-label="Choisir un avis"></div>
+      <div class="rv__btns">
+        <button class="rv__btn" id="rvPlay" type="button" aria-pressed="false" aria-label="Mettre le défilement en pause"><svg aria-hidden="true"><use href="#i-pause"/></svg></button>
+        <button class="rv__btn" id="rvPrev" type="button" aria-label="Avis précédent"><svg aria-hidden="true" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+        <button class="rv__btn" id="rvNext" type="button" aria-label="Avis suivant"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 8. APPEL À L'ACTION                                                 -->
+<!-- ================================================================== -->
+<section class="cta" id="rdv" aria-labelledby="cta-title">
+  <div class="sep sep--wave" aria-hidden="true"></div>
+  <div class="cta__orchid" aria-hidden="true"><svg class="orchid"><use href="#orchid"/></svg></div>
+  <div class="container cta__inner">
+    <p class="eyebrow" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Rendez-vous</p>
+    <h2 class="cta__title display" id="cta-title" data-split="words">Et si on prenait <em>soin de vous&nbsp;?</em></h2>
+    <a class="cta__phone display" href="tel:+33608427492" data-magnetic aria-label="Appeler le 06 08 42 74 92">
+      <span class="cta__phone-in"><svg aria-hidden="true"><use href="#i-phone"/></svg>06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</span>
+    </a>
+    <div class="cta__actions" data-fade>
+      <a class="btn btn--plum" href="tel:+33608427492" data-magnetic><span class="btn__fill"></span><span class="btn__label"><svg aria-hidden="true"><use href="#i-phone"/></svg>Réserver par téléphone</span></a>
+      <a class="btn btn--ghost" href="https://maps.app.goo.gl/DtU1ECkt7ipXzRX59" target="_blank" rel="noopener" data-magnetic><span class="btn__fill"></span><span class="btn__label"><svg aria-hidden="true"><use href="#i-pin"/></svg>Voir l'itinéraire</span></a>
+    </div>
+    <p class="cta__note" data-fade>Du lundi au samedi de 10&nbsp;h à 19&nbsp;h · dimanche de 13&nbsp;h à 19&nbsp;h</p>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 9. NOUS TROUVER                                                     -->
+<!-- ================================================================== -->
+<section class="acces" id="acces" aria-labelledby="acces-title">
+  <div class="container">
+    <div class="acces__head">
+      <p class="eyebrow" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Venir nous voir</p>
+      <h2 class="h2 display" id="acces-title" data-split="words">Nous <em>trouver.</em></h2>
+    </div>
+
+    <div class="acces__grid">
+      <div class="acces__card" data-fade>
+        <p class="status" id="statusAcces"><span class="status__dot" data-status-dot></span><span data-status>Horaires du jour</span></p>
+        <address class="acces__addr">
+          <svg aria-hidden="true"><use href="#i-pin"/></svg>
+          <span><strong>Orchidée Thai Massage</strong><br>4 Rpe du Vieux Bourg<br>29200 Brest</span>
+        </address>
+        <a class="acces__tel link-u" href="tel:+33608427492"><svg aria-hidden="true"><use href="#i-phone"/></svg>06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</a>
+
+        <h3 class="acces__h">Horaires</h3>
+        <table class="hours">
+          <caption class="sr-only">Horaires d'ouverture</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Lundi</th><td>10h – 19h</td></tr>
+            <tr data-day="2"><th scope="row">Mardi</th><td>10h – 19h</td></tr>
+            <tr data-day="3"><th scope="row">Mercredi</th><td>10h – 19h</td></tr>
+            <tr data-day="4"><th scope="row">Jeudi</th><td>10h – 19h</td></tr>
+            <tr data-day="5"><th scope="row">Vendredi</th><td>10h – 19h</td></tr>
+            <tr data-day="6"><th scope="row">Samedi</th><td>10h – 19h</td></tr>
+            <tr data-day="0"><th scope="row">Dimanche</th><td>13h – 19h</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="acces__map" data-reveal="circle">
+        <div class="frame frame--arch-lg">
+          <div class="acces__fallback" aria-hidden="true"><svg><use href="#orchid"/></svg><p>Orchidée Thai Massage<br>4 Rpe du Vieux Bourg, Brest</p></div>
+          <iframe title="Carte Google Maps : Orchidée Thai Massage, 4 Rpe du Vieux Bourg, 29200 Brest" src="https://www.google.com/maps?q=Orchid%C3%A9e+thai+massage%2C+4+Rpe+du+Vieux+Bourg%2C+29200+Brest&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+          <a class="acces__maplink" href="https://maps.app.goo.gl/DtU1ECkt7ipXzRX59" target="_blank" rel="noopener" aria-label="Ouvrir l'adresse dans Google Maps (nouvel onglet)">
+            <span>Ouvrir dans Google Maps <svg aria-hidden="true"><use href="#i-north-east"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== -->
+<!-- 10. FAQ (section supplémentaire)                                    -->
+<!-- ================================================================== -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container faq__wrap">
+    <div class="faq__head">
+      <p class="eyebrow" data-fade><svg aria-hidden="true"><use href="#i-petal"/></svg>Questions fréquentes</p>
+      <h2 class="h2 display" id="faq-title" data-split="words">Avant de <em>réserver.</em></h2>
+    </div>
+    <div class="faq__list" id="faqList">
+      <div class="faq__item">
+        <h3><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>Comment prendre rendez-vous&nbsp;?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1" inert><div><p>Par téléphone, tout simplement : <a class="link-u" href="tel:+33608427492">06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</a>. Un appel suffit pour fixer ensemble le créneau qui vous convient.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Quels sont les horaires d'ouverture&nbsp;?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2" inert><div><p>Le salon est ouvert tous les jours : du lundi au samedi de 10&nbsp;h à 19&nbsp;h, et le dimanche de 13&nbsp;h à 19&nbsp;h.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>Peut-on choisir l'intensité de la pression&nbsp;?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3" inert><div><p>Oui, c'est même le principe. Dites où vous avez mal et ce que vous aimez, du très doux au très profond : le massage s'adapte à vos besoins et à vos ressentis, pendant toute la séance.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>Quels soins, quelles durées, quels tarifs&nbsp;?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4" inert><div><p>Appelez-nous : on vous présente les soins, les durées et les tarifs, et on choisit ensemble celui qui vous correspond.</p></div></div>
+      </div>
+      <div class="faq__item">
+        <h3><button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>Où se trouve le salon&nbsp;?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5" inert><div><p>4 Rpe du Vieux Bourg, 29200 Brest. <a class="link-u" href="https://maps.app.goo.gl/DtU1ECkt7ipXzRX59" target="_blank" rel="noopener">Ouvrir l'itinéraire dans Google Maps</a>.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================================================================== -->
+<!-- FOOTER                                                              -->
+<!-- ================================================================== -->
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__col">
+      <p class="footer__h">Orchidée Thai Massage</p>
+      <p>Salon de massage thaïlandais<br>4 Rpe du Vieux Bourg<br>29200 Brest</p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__h">Contact</p>
+      <p><a class="link-u link-u--light" href="tel:+33608427492">06&nbsp;08&nbsp;42&nbsp;74&nbsp;92</a><br>
+      <a class="link-u link-u--light" href="https://maps.app.goo.gl/DtU1ECkt7ipXzRX59" target="_blank" rel="noopener">Google Maps</a></p>
+      <!-- Réseaux sociaux : ajouter ici les liens Instagram / Facebook / TikTok du salon -->
+    </div>
+    <div class="footer__col">
+      <p class="footer__h">Horaires</p>
+      <p>Lun – Sam : 10h – 19h<br>Dimanche : 13h – 19h</p>
+    </div>
+    <div class="footer__col footer__nav">
+      <p class="footer__h">Explorer</p>
+      <p><a class="link-u link-u--light" href="#rituel">Le rituel</a><br><a class="link-u link-u--light" href="#soins">Les soins</a><br><a class="link-u link-u--light" href="#avis">Les avis</a><br><a class="link-u link-u--light" href="#faq">Questions</a></p>
+    </div>
+  </div>
+
+  <p class="footer__giant display" id="footerGiant" aria-hidden="true" data-chars>Orchidée</p>
+
+  <div class="container footer__bot">
+    <p>© <span id="year">2026</span> Orchidée Thai Massage · Brest</p>
+    <a class="footer__top-btn link-u link-u--light" href="#top">Retour en haut <svg aria-hidden="true" style="transform:rotate(-90deg)"><use href="#i-arrow"/></svg></a>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
