@@ -16,6 +16,16 @@ python3 -m http.server 8000
 Puis ouvrir <http://localhost:8000>. Le site se déploie tel quel sur n'importe quel hébergement statique
 (GitHub Pages, Netlify, OVH, etc.).
 
+## Déploiement (GitHub Pages)
+
+Le workflow `.github/workflows/pages.yml` publie `index.html` + `assets/` à chaque push sur `main`
+(ou à la demande : onglet *Actions* → *Déploiement GitHub Pages* → *Run workflow*).
+
+Réglage à faire **une seule fois** : *Settings → Pages → Build and deployment → Source : GitHub Actions*.
+
+Adresse du site : <https://loopifyagency.github.io/site-orchide-thai-massage/>
+(les chemins du site sont relatifs, il fonctionne aussi sur un domaine personnalisé).
+
 ## Structure
 
 ```
